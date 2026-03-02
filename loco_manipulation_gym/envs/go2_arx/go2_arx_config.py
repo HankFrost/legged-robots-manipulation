@@ -112,7 +112,7 @@ class Go2ArxRoughCfg( LeggedRobotCfg ):
         arm_control_type = 'position'
 
     class asset( LeggedRobotCfg.asset ):
-        file = '{LOCO_MANI_GYM_ROOT_DIR}/resources/robots/go2_arx/urdf/go2_arx.urdf'
+        file = '{LOCO_MANI_GYM_ROOT_DIR}/resources/robots/go2_arx/urdf/go2_arx_badmiton.urdf'
         name = "go2_arx"
         foot_name = "foot"
         arm_link_name = ["arm"]

@@ -56,6 +56,9 @@ from loco_manipulation_gym.envs.b2w.b2w_config import B2wRoughCfg, B2wRoughCfgPP
 from loco_manipulation_gym.envs.go2w.go2w_robot import Go2w
 from loco_manipulation_gym.envs.go2w.go2w_config import Go2wRoughCfg, Go2wRoughCfgPPO
 
+from loco_manipulation_gym.envs.tennis.tennis_config import TennisRoughCfg, TennisRoughCfgPPO
+from loco_manipulation_gym.envs.tennis.tennis_robot import TennisRobot
+
 task_registry.register( "go2_human", Go2HumanRobot, Go2HumanRoughCfg(), Go2HumanRoughCfgPPO())
 task_registry.register( "go2_arx", Go2ArxRobot, Go2ArxRoughCfg(), Go2ArxRoughCfgPPO())
 
@@ -69,3 +72,4 @@ task_registry.register( "go2w", B2w, Go2wRoughCfg(), Go2wRoughCfgPPO() )
 
 
 task_registry.register( "airbot", Airbot, AirbotRoughCfg(), AirbotRoughCfgPPO() )
+task_registry.register( "tennis", TennisRobot, TennisRoughCfg(), TennisRoughCfgPPO() )

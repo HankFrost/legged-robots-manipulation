@@ -1,0 +1,20 @@
+# Core numerical / plotting dependencies used directly in project code
+# numpy is pinned to an Isaac Gym friendly range (<1.24) to avoid ABI incompatibilities
+numpy>=1.23.5,<1.24
+matplotlib>=3.5,<3.9
+scipy>=1.9,<1.11
+
+# Deep learning / RL common stack
+torch>=1.13,<2.3
+tensorboard>=2.10,<2.16
+
+# ---------------------------
+# Manual Installation Required
+# ---------------------------
+# Isaac Gym is not distributed as a normal PyPI package for all platforms.
+# Install from NVIDIA Isaac Gym release package and ensure PYTHONPATH is set correctly.
+isaacgym
+
+# rsl-rl is typically installed from source (matching your Isaac Gym / torch stack).
+# Example: pip install -e <path-to-rsl_rl>
+rsl-rl
